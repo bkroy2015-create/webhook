@@ -1,0 +1,1 @@
+const express = require('express'); const app = express(); app.get('/webhook', (req, res) => { const challenge = req.query['hub.challenge']; res.status(200).send(challenge); });
